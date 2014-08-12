@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	
+	<persistence-unit name="dev3" transaction-type="RESOURCE_LOCAL">
+	 <provider>org.hibernate.ejb.HibernatePersistence</provider>
+	  <class>entities.Produto</class>
+	  <properties>
+	  <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+	  <property name="hibernate.hbm2ddl.auto" value="update" />
+	  <property name="hibernate.show_sql" value="true" />
+	  <property name="hibernate.format_sql" value="true" />
+	  <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+	  <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/JSON-SERVER07-11" />
+	  <property name="javax.persistence.jdbc.user" value="root" />
+	  <property name="javax.persistence.jdbc.password" value="marciosn" />
+	  </properties>
+	  </persistence-unit>
+	
+	<persistence-unit name="dev-2" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <properties>
+      <property name="hibernate.connection.username" value="marcio"/>
+      <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver?createDatabaseIfNotExist=true;useUnicode=true;characterEncoding=utf-8"/>
+      <property name="hibernate.connection.password" value="123"/>
+      <property name="hibernate.connection.url" value="jdbc:mysql://localhost/JSON-SERVER07-11"/>
+      <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
+      <property name="hibernate.connection.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+<!--      <property name="hibernate.connection.dialect" value="org.hibernate.dialect.MySQLInnoDBDialect"/>-->
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
+   	</properties>
+  	</persistence-unit>
+
+	<persistence-unit name="dev" transaction-type="RESOURCE_LOCAL">
+		<properties>
+			<!-- <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/Android" /> -->
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://100.66.36.74/Android" />
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+			<property name="javax.persistence.jdbc.user" value="postgres" />
+			<property name="javax.persistence.jdbc.password" value="marciosn" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="dev-h2" transaction-type="RESOURCE_LOCAL">
+		<properties>
+			<property name="javax.persistence.jdbc.url" 
+				value="jdbc:h2:~/events" />
+			<property name="javax.persistence.jdbc.driver" 
+				value="org.h2.Driver" />
+
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+
+		</properties>
+	</persistence-unit>
+
+</persistence>
