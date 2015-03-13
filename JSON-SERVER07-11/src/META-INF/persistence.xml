@@ -14,7 +14,7 @@
 	  <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
 	  <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/JSON-SERVER07-11" />
 	  <property name="javax.persistence.jdbc.user" value="root" />
-	  <property name="javax.persistence.jdbc.password" value="marciosn" />
+	  <property name="javax.persistence.jdbc.password" value="*******" />
 	  </properties>
 	  </persistence-unit>
 	
@@ -23,7 +23,7 @@
     <properties>
       <property name="hibernate.connection.username" value="marcio"/>
       <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver?createDatabaseIfNotExist=true;useUnicode=true;characterEncoding=utf-8"/>
-      <property name="hibernate.connection.password" value="123"/>
+      <property name="hibernate.connection.password" value="*******"/>
       <property name="hibernate.connection.url" value="jdbc:mysql://localhost/JSON-SERVER07-11"/>
       <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
       <property name="hibernate.connection.dialect" value="org.hibernate.dialect.MySQLDialect"/>
@@ -38,7 +38,7 @@
 			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://100.66.36.74/Android" />
 			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
 			<property name="javax.persistence.jdbc.user" value="postgres" />
-			<property name="javax.persistence.jdbc.password" value="marciosn" />
+			<property name="javax.persistence.jdbc.password" value="*******" />
 			<property name="hibernate.hbm2ddl.auto" value="update" />
 			<property name="hibernate.show_sql" value="true" />
 			<property name="hibernate.format_sql" value="true" />
